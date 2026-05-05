@@ -7,7 +7,8 @@ Site estático do estúdio Nexo Visual, desenvolvido em HTML5, CSS3 e JavaScript
 - `index.html`: Página principal com todas as seções
 - `styles.css`: Estilos CSS com variáveis, responsividade e otimizações mobile
 - `script.js`: JavaScript para interações (navbar, menu mobile, filtros)
-- `logo.png`: Logo em alta resolução (2400x1600px)
+- `logo.png`: Logo em alta resolução (3840x2560px)
+- `manos-burger.png`: Post Instagram Mano's Burger (e-commerce)
 - `404.html`: Página de erro personalizada
 - `README.md`: Este arquivo
 
@@ -23,7 +24,16 @@ Abra o arquivo `index.html` em qualquer navegador web moderno.
 - ✓ Seções: Hero, Sobre, Serviços, Portfólio com filtros, Processo, Depoimentos, Contato
 - ✓ Formulário de contato (frontend)
 - ✓ Acessibilidade melhorada em dispositivos móveis
-- ✓ Logo em alta resolução (PNG 2400x1600px)
+- ✓ Logo em alta resolução (PNG 3840x2560px)
+- ✓ Portfólio com projeto e-commerce Mano's Burger
+
+## Portfólio
+
+Projetos inclusos:
+- 6 projetos de exemplo (logos, branding, web)
+- Mano's Burger: Post Instagram e-commerce
+
+Filtros disponíveis: Todos, Logotipos, Branding, Web
 
 ## Melhorias Mobile
 
@@ -41,4 +51,4 @@ Abra o arquivo `index.html` em qualquer navegador web moderno.
 - CSS3 (variáveis CSS, media queries)
 - JavaScript ES6
 - Google Fonts: Syne, DM Sans, DM Mono
-- PNG (logo em alta resolução)# Nexo_Visual
+- PNG (logo e imagens em alta resolução)# Nexo_Visual
