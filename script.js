@@ -72,3 +72,41 @@ document.addEventListener('click', function(event) {
     navLinks.classList.remove('active');
   }
 });
+
+// Zoom Modal
+const zoomModal = document.getElementById('zoomModal');
+const zoomImg = document.getElementById('zoomImg');
+const zoomClose = document.querySelector('.zoom-close');
+const zoomBtns = document.querySelectorAll('.zoom-btn');
+
+zoomBtns.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const img = this.parentElement.querySelector('.project-img');
+    zoomImg.src = img.src;
+    zoomImg.alt = img.alt;
+    zoomModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Fechar zoom ao clicar no X
+zoomClose.addEventListener('click', function() {
+  zoomModal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+});
+
+// Fechar zoom ao clicar fora da imagem
+zoomModal.addEventListener('click', function(event) {
+  if (event.target === zoomModal) {
+    zoomModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Fechar zoom com tecla ESC
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && zoomModal.classList.contains('active')) {
+    zoomModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});

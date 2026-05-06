@@ -90,31 +90,52 @@
             </div>
             <div class="portfolio-grid">
                 <div class="project" data-category="logo">
-                    <img src="https://via.placeholder.com/300x200/1E4FD8/FFFFFF?text=Logo+1" alt="Projeto 1">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/1E4FD8/FFFFFF?text=Logo+1" alt="Projeto 1" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Logo Empresa X</h4>
                 </div>
                 <div class="project" data-category="brand">
-                    <img src="https://via.placeholder.com/300x200/00C2C7/FFFFFF?text=Branding+1" alt="Projeto 2">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/00C2C7/FFFFFF?text=Branding+1" alt="Projeto 2" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Identidade Marca Y</h4>
                 </div>
                 <div class="project" data-category="web">
-                    <img src="https://via.placeholder.com/300x200/0D1B4B/FFFFFF?text=Web+1" alt="Projeto 3">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/0D1B4B/FFFFFF?text=Web+1" alt="Projeto 3" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Website Z</h4>
                 </div>
                 <div class="project" data-category="logo">
-                    <img src="https://via.placeholder.com/300x200/1E4FD8/FFFFFF?text=Logo+2" alt="Projeto 4">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/1E4FD8/FFFFFF?text=Logo+2" alt="Projeto 4" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Logo Startup A</h4>
                 </div>
                 <div class="project" data-category="brand">
-                    <img src="https://via.placeholder.com/300x200/00C2C7/FFFFFF?text=Branding+2" alt="Projeto 5">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/00C2C7/FFFFFF?text=Branding+2" alt="Projeto 5" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Rebranding B</h4>
                 </div>
                 <div class="project" data-category="web">
-                    <img src="https://via.placeholder.com/300x200/0D1B4B/FFFFFF?text=Web+2" alt="Projeto 6">
+                    <div class="project-img-wrapper">
+                        <img src="https://via.placeholder.com/300x200/0D1B4B/FFFFFF?text=Web+2" alt="Projeto 6" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>E-commerce C</h4>
                 </div>
                 <div class="project" data-category="web">
-                    <img src="manos-burger.png" alt="Mano's Burger E-commerce">
+                    <div class="project-img-wrapper">
+                        <img src="manos-burger.png" alt="Mano's Burger E-commerce" class="project-img">
+                        <button class="zoom-btn" title="Ampliar em tela cheia">⛶</button>
+                    </div>
                     <h4>Mano's Burger - Post Instagram</h4>
                 </div>
             </div>
@@ -186,6 +207,12 @@
             <p>&copy; 2023 Nexo Visual. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Modal de Zoom -->
+    <div id="zoomModal" class="zoom-modal">
+        <span class="zoom-close">&times;</span>
+        <img id="zoomImg" src="" alt="Imagem em zoom">
+    </div>
 
     <script src="script.js"></script>
 </body>

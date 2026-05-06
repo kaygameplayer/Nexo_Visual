@@ -418,6 +418,93 @@ section {
   background: var(--azul-vibrante);
 }
 
+/* Zoom Modal */
+.project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zoom-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 194, 199, 0.95);
+  color: var(--branco);
+  border: 2px solid var(--branco);
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-img-wrapper:hover .zoom-btn {
+  opacity: 1;
+}
+
+.zoom-btn:hover {
+  background: var(--azul-vibrante);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.zoom-modal.active {
+  display: flex;
+}
+
+.zoom-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.zoom-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--branco);
+  font-size: 3rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 2001;
+}
+
+.zoom-close:hover {
+  color: var(--teal);
+}
+
 /* Footer */
 .footer {
   background: var(--azul-profundo);
@@ -540,6 +627,24 @@ section {
     height: 250px;
   }
 
+  .zoom-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    opacity: 1; /* Always visible on mobile */
+  }
+
+  .zoom-close {
+    font-size: 2rem;
+    top: 10px;
+    right: 15px;
+  }
+
+  .zoom-modal img {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+
   /* Processo */
   .processo-steps {
     flex-direction: column;
@@ -655,6 +760,26 @@ section {
 
   .container {
     padding: 0 15px;
+  }
+
+  .zoom-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+    top: 8px;
+    right: 8px;
+    opacity: 1; /* Always visible on small mobile */
+  }
+
+  .zoom-close {
+    font-size: 1.8rem;
+    top: 8px;
+    right: 12px;
+  }
+
+  .zoom-modal img {
+    max-width: 98vw;
+    max-height: 80vh;
   }
 
   .stat h3 {

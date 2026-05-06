@@ -26,6 +26,7 @@ Abra o arquivo `index.html` em qualquer navegador web moderno.
 - ✓ Acessibilidade melhorada em dispositivos móveis
 - ✓ Logo em alta resolução (PNG 3840x2560px)
 - ✓ Portfólio com projeto e-commerce Mano's Burger
+- ✓ Zoom modal para visualizar imagens em alta resolução
 
 ## Portfólio
 
