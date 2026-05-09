@@ -71,6 +71,10 @@ p { font-size: 1rem; color: var(--cinza-texto); }
   align-items: center;
 }
 
+.navbar.scrolled .logo {
+  color: var(--azul-profundo);
+}
+
 .logo {
   display: flex;
   align-items: center;
