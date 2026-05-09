@@ -46,7 +46,7 @@ h2 { font-size: 2.5rem; font-weight: 700; }
 h3 { font-size: 2rem; font-weight: 600; }
 h4 { font-size: 1.5rem; font-weight: 600; }
 
-p { font-size: 1rem; color: var(--cinza-texto); }
+p { font-size: 1rem; color: var(--azul-profundo); }
 
 /* Navbar */
 .navbar {
@@ -61,18 +61,28 @@ p { font-size: 1rem; color: var(--cinza-texto); }
 
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-card);
+
+  .logo {
+    color: var(--azul-profundo);
+  }
+
+  .nav-links a {
+   text-decoration: none;
+   color: var(--azul-profundo);
+   font-weight: 500;
+   transition: color 0.3s;
+   position: relative;
+}
+
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar.scrolled .logo {
-  color: var(--azul-profundo);
 }
 
 .logo {
@@ -84,8 +94,8 @@ p { font-size: 1rem; color: var(--cinza-texto); }
 }
 
 .logo-img {
-  height: 140px;
-  max-height: 140px;
+  height: 120px;
+  max-height: 120px;
   width: auto;
   margin-right: 12px;
   object-fit: contain;
@@ -108,6 +118,7 @@ p { font-size: 1rem; color: var(--cinza-texto); }
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.98);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 20px;
   box-shadow: var(--shadow-card);
@@ -123,11 +134,12 @@ p { font-size: 1rem; color: var(--cinza-texto); }
   display: block;
   padding: 12px;
   font-size: 1.1rem;
+  color: var(--branco)
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--azul-profundo);
+  color: var(--branco);
   font-weight: 500;
   transition: color 0.3s;
   position: relative;
@@ -209,6 +221,7 @@ p { font-size: 1rem; color: var(--cinza-texto); }
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: var(--branco);
 }
 
 .hero-cta {
